@@ -117,10 +117,7 @@ footer article{
     background-color: var(--yellow);
     cursor: pointer;
 }
-footer article:hover{
-    transform: scale(.9, 1.1);
-    border: 5px solid var(--black);
-}
+
 /* ---------------------------- left */
 footer article .footer-article__left{
     width: 150px;
