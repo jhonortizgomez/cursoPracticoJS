@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Practico de JS - Taller 1</title>
+    <link rel="stylesheet" href="../CSS/taller1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/taller1-laptop.css" media="(min-width: 1024px)">
+    </head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="../index.html">
+                    <div class="nav-picture__left">
+                        <picture>
+                            <img src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/js-challenge-logo.png" alt="Logo JavaScript" class="logo-js">
+                        </picture>
+                    </div>
+                </a>
+                <section class="nav-section__rigth">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="">Taller 2</a></li>
+                        <li><a href="">Taller 3</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+        <main>
+            <div class="main-container">
+                <h1>Calcula el área y perímetro de las siguientes figuras:</h1>
+                <div class="container-cards">
+                    <article class="card-square">
+                        <h2>Cuadrado</h2>
+                        <form action="">
+                            <label for="inputCuadrado">
+                                Escribe cuánto mide cada lado de tu cuadrado:
+                            </label>
+                            <div class="main-container__input">
+                                <input id="inputCuadrado" type="number" placeholder="Número">
+                                <select name="measure" id="measure-cuadrado">
+                                    <option value="cm">CM</option>
+                                    <option value="m">M</option>
+                                </select>
+                            </div>
+                            <div class="main-container__buttons">
+                                <button type="button" onclick="calcularPerimetroCuadrado()">
+                                    Calcular perimetro
+                                </button>
+                                <button type="button" onclick="calcularAreaCuadrado()">
+                                    Calcular el área
+                                </button>
+                            </div>
+                            <div class="main-container__result">
+                                <p>Resultado:</p>
+                                <p id="result-square"></p>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="card-triangle">
+                        <h2>Triangulo</h2>
+                        <form action="">
+                            <label for="inputTriangleSide1">
+                                lado 1 de tu triangulo:
+                            </label>
+                            <div class="main-container__input">
+                                <input id="inputTriangleSide1" type="number" placeholder="Número">
+                                <select name="measure" id="measureTriangleSide1">
+                                    <option value="cm">CM</option>
+                                    <option value="m">M</option>
+                                </select>
+                            </div>
+                            <label for="inputTriangleSide2">
+                                lado 2 de tu triangulo:
+                            </label>
+                            <div class="main-container__input">
+                                <input id="inputTriangleSide2" type="number" placeholder="Número">
+                                <select name="measure" id="measureTriangleSide2">
+                                    <option value="cm">CM</option>
+                                    <option value="m">M</option>
+                                </select>
+                            </div>
+                            <label for="inputTriangleBase">
+                                Base de tu triangulo:
+                            </label>
+                            <div class="main-container__input">
+                                <input id="inputTriangleBase" type="number" placeholder="Número">
+                                <select name="measure" id="measureTriangleBase">
+                                    <option value="cm">CM</option>
+                                    <option value="m">M</option>
+                                </select>
+                            </div>
+                            <label for="inputTriangleAltura">
+                                Altura de tu triangulo
+                            </label>
+                            <div class="main-container__input">
+                                <input id="inputTriangleAltura" type="number" placeholder="Número">
+                                <select name="measure" id="measureTriangleAltura">
+                                    <option value="cm">CM</option>
+                                    <option value="m">M</option>
+                                </select>
+                            </div>
+                            <div class="main-container__buttons">
+                                <button type="button" onclick="calcularPerimetroTriangulo()">
+                                    Calcular perimetro
+                                </button>
+                                <button type="button" onclick="calcularAreaTriangulo()">
+                                    Calcular el área
+                                </button>
+                            </div>
+                            <div class="main-container__result">
+                                <p>Resultado:</p>
+                                <p id="result-triangle"></p>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="card-circle">
+                        <h2>Circulo</h2>
+                        <form action="">
+                            <label for="inputCircle">
+                                Escribe cuánto es el radio de tu circulo:
+                            </label>
+                            <div class="main-container__input">
+                                <input id="inputCircle" type="number" placeholder="Número">
+                                <select name="measure" id="measure-circle">
+                                    <option value="cm">CM</option>
+                                    <option value="m">M</option>
+                                </select>
+                            </div>
+                            <div class="main-container__buttons">
+                                <button type="button" onclick="calcularPerimetroCirculo()">
+                                    Calcular circuferencia
+                                </button>
+                                <button type="button" onclick="calcularAreaCirculo()">
+                                    Calcular el área
+                                </button>
+                                <button type="button" onclick="calcularDiametroCirculo()">
+                                    Calcular el Diametro
+                                </button>
+                            </div>
+                            <div class="main-container__result">
+                                <p>Resultado:</p>
+                                <p id="result-circle"></p>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-picture">
+                <picture >
+                    <img src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/js-challenge-logo.png" alt="Logo JavaScript" class="logo-js">
+                </picture>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li><a href="https://github.com/jhonortizgomez/cursoPracticoJS" target="_blank">Repositorio</a></li>
+                    <li>Hecho por <a href="https://www.linkedin.com/in/jhon-ortiz-gomez-367287234" target="_blank">@jhonortizgomez</a></li>
+                    <li>Jhon Ortiz Gómez</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="../JavaScript/taller1.js"></script>
+</body>
+</html>
