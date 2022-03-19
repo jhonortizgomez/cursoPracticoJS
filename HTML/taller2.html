@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Practico de JS - Taller 2</title>
+    <link rel="stylesheet" href="../CSS/taller2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/taller2-laptop.css" media="(min-width: 1024px)">
+    </head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="../index.html">
+                    <div class="nav-picture__left">
+                        <picture>
+                            <img src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/js-challenge-logo.png" alt="Logo JavaScript" class="logo-js">
+                        </picture>
+                    </div>
+                </a>
+                <section class="nav-section__rigth">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./taller1.html">Taller 1</a></li>
+                        <li><a href="./taller3.html">Taller 3</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+        <main>
+            <div class="main-container">
+                <h1>Calcula un precio aplicando un descuento</h1>
+                <div class="container-cards">
+                    <article class="card-triangle">
+                        <h2>Precio con descuento</h2>
+                        <form action="">
+                            <label for="inputTriangleSide1">
+                                ¿Cuál es el precio?
+                            </label>
+                            <div class="main-container__input">
+                                <input id="inputPrice" type="number" placeholder="Precio">    
+                            </div>
+                            <label for="inputTriangleSide2">
+                                ¿Cuál es el porentaje de descuento?
+                            </label>
+                            <div class="main-container__input">
+                                <input id="inputDescount" type="number" placeholder="Descuento">
+                            </div>
+                            <div class="main-container__buttons">
+                                <button type="button" onclick="onCliclButtonPriceDiscount()">
+                                    Calcular precio con descuento
+                                </button>
+                            </div>
+                            <div class="main-container__result">
+                                <p>Resultado:</p>
+                                <p id="result"></p>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-picture">
+                <picture >
+                    <img src="https://lucasfrezzini.github.io/platzi-curso-practico-javascript/assets/img/js-challenge-logo.png" alt="Logo JavaScript" class="logo-js">
+                </picture>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li><a href="https://github.com/jhonortizgomez/cursoPracticoJS" target="_blank">Repositorio</a></li>
+                    <li>Hecho por <a href="https://www.linkedin.com/in/jhon-ortiz-gomez-367287234" target="_blank">@jhonortizgomez</a></li>
+                    <li>Jhon Ortiz Gómez</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="../JavaScript/taller2.js"></script>
+</body>
+</html>
