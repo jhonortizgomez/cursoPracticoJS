@@ -83,7 +83,7 @@ function calcularModa(lista){
     );
 
     const moda = listaCountArray[listaCountArray.length - 1];
-    return moda;
+    return parseInt(moda);
 }
 
 function onClickButtonModa(){
