@@ -1,7 +1,10 @@
 
 # [ Calculadora📱](https://jhonortizgomez.github.io/cursoPracticoJS/)
 
-Este es un sitio web responsive en el cual podras calcular:
+
+Bienvenido/a a la Calculadora, tu herramienta online para realizar una variedad de cálculos útiles. Este sitio web responsive te permite calcular el perímetro y área de cuadrados, triángulos y círculos, determinar precios con descuento, y obtener estadísticas como promedio, media y moda.
+
+
 
 - Perimetro y área de cuadrados, triangulos y circulos.
 - Precio con descuento.
